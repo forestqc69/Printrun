@@ -295,6 +295,7 @@ class Settings:
         self._add(StringSetting("final_command", "", _("Final command"), _("Executable to run when the print is finished"), "External"))
         self._add(StringSetting("error_command", "", _("Error command"), _("Executable to run when an error occurs"), "External"))
         self._add(StringSetting("log_path", "", _("Log path"), _("Path to the log file. An empty path will log to the console."), "UI"))
+        self._add(StringSetting("instance_NB", "", _("Instance Number"), _("Leave empty or add an instance number (1-9). This is to manage more than one printer at same time and keep config."), "External"))
 
         self._add(HiddenSetting("project_offset_x", 0.0))
         self._add(HiddenSetting("project_offset_y", 0.0))
